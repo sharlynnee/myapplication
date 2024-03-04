@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #664d03;
+        }
+    </style>
+</head>
+<body>
+<u><b><center><h1>MESSAGES RECEIVED</h1></center></b></u>
+{% for Contact in details %}
+NAME :{{ Contact.name }}  <br>  
+EMAIL :{{ Contact.email }} <br>
+SUBJECT :{{ Contact.subject }}  <br>
+MESSAGE :{{ Contact.message }}  <br>
+    <hr>
+{% endfor %}
+
+
+</body>
+</html>
